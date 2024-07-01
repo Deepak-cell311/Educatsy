@@ -45,6 +45,8 @@ app.use(cors(corsOption));
 
 /* MongoDB setup */
 const mongoURI = "mongodb://127.0.0.1:27017/Educatsy";
+// const mongoURI = "mongodb+srv://Educasy:Educatsy%40123456789@educatsy.fghdcze.mongodb.net/";
+// const mongoURI = "mongodb+srv://Educasy:Educatsy%40123456789@educatsy.fghdcze.mongodb.net/?retryWrites=true&w=majority&appName=Educatsy";
 
 try {
   mongoose
