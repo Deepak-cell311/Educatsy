@@ -1,18 +1,23 @@
 {
+  "homepage": "https://Deepak-cell311.github.io/Home/",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-legacy": "react-scripts --openssl-legacy-provider start",
+    "build-legacy": "react-scripts --openssl-legacy-provider build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Desh Deepak Bajpai",
   "license": "ISC",
-  "description": "",
+  "description": "Educatsy is a LMS platform",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -23,7 +28,7 @@
     "react-hook-form": "^7.52.0",
     "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.24.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "react-toastify": "^10.0.5",
     "react-youtube": "^10.1.0",
     "web-vitals": "^2.1.4"
@@ -46,5 +51,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }

@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const router = express.Router()
 
+/* Ignore this router and move on the uerRouter.js  */
+
+
 const { home, register, login, contact } = require('../controllers/authController')
 
 

@@ -1,5 +1,9 @@
 /* Educatsy Controller */
 
+
+/* isko ignore karo userController wale me jao wahi sahi controller hai */
+
+
 const express = require('express')
 const userModel = require('../models/User')
 const bcrypt = require('bcrypt')
@@ -41,11 +45,6 @@ const register = async (req, res) => {
 
           const hashSalt = bcrypt.genSalt(10)
           const hashPassword = bcrypt.compare(password, hashSalt)
-
-
-      
-
-
      } catch (error) {
           
      }
