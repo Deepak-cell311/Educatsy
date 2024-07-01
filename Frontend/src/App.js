@@ -36,7 +36,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<RegisterPage />} />
         <Route path="/forgetPassword" element={<ForgetPassword />} />
-        <Route path="*" element={<ErrorPage/>} />
+        <Route path="*" element={<Home/>} />
         </Routes>
         <Toaster />
       <Footer />
