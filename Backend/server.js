@@ -55,7 +55,7 @@ try {
     })
     .then(() => {
       console.log("Connected to MongoDB");
-      app.listen(5000 || 4000, () => console.log("Server running on port 5000"));
+      app.listen(5000, () => console.log("Server running on port 5000"));
     })
     .catch((err) => {
       console.error("Could not connect to MongoDB:", err)
