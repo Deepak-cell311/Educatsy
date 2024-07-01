@@ -45,7 +45,6 @@ app.use(cors(corsOption));
 
 /* MongoDB setup */
 const mongoURI = "mongodb://127.0.0.1:27017/Educatsy";
-// const mongoURI = "mongodb+srv://Educasy:Educatsy%40123456789@educatsy.fghdcze.mongodb.net/";
 // const mongoURI = "mongodb+srv://Educasy:Educatsy%40123456789@educatsy.fghdcze.mongodb.net/?retryWrites=true&w=majority&appName=Educatsy";
 
 try {
@@ -56,7 +55,7 @@ try {
     })
     .then(() => {
       console.log("Connected to MongoDB");
-      app.listen(5000, () => console.log("Server running on port 5000"));
+      app.listen(5000 || 4000, () => console.log("Server running on port 5000"));
     })
     .catch((err) => {
       console.error("Could not connect to MongoDB:", err)
