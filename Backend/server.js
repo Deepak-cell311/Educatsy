@@ -1,5 +1,6 @@
 /* LMS Server */
 
+require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
@@ -44,18 +45,19 @@ const corsOption = {
 app.use(cors(corsOption));
 
 /* MongoDB setup */
-const mongoURI = "mongodb://127.0.0.1:27017/Educatsy";
+// const mongoURI = "mongodb://127.0.0.1:27017/Educatsy";
+const mongoURI = process.env.MONGO_URI 
 // const mongoURI = "mongodb+srv://Educasy:Educatsy%40123456789@educatsy.fghdcze.mongodb.net/?retryWrites=true&w=majority&appName=Educatsy";
 
 try {
   mongoose
     .connect(mongoURI, {
       useNewUrlParser: true,
-      useUnifiedTopology: true,
+      // useUnifiedTopology: true,
     })
     .then(() => {
       console.log("Connected to MongoDB");
-      app.listen(5000, () => console.log("Server running on port 5000"));
+      app.listen(process.env.PORT, () => console.log("Server running on port 5000"));
     })
     .catch((err) => {
       console.error("Could not connect to MongoDB:", err)
