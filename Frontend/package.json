@@ -10,9 +10,7 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start-legacy": "react-scripts --openssl-legacy-provider start",
-    "build-legacy": "react-scripts --openssl-legacy-provider build"
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "Desh Deepak Bajpai",
