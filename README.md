@@ -15,7 +15,7 @@ Educatsy is a powerful learning management system (LMS) web application built us
 ## Deployement
 
 ```bash
-https://educatsy-virid.vercel.app
+https://educatsy.vercel.app/
 ```
 
 ## Screenshots
