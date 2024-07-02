@@ -54,7 +54,7 @@ const handleSubmit = async (e) => {
     //   username: contact.username,
     //   message: contact.message
     // })
-    const response = await axios.post("http://educatsy-3rtz.onrender/api/form/contact", contact)
+    const response = await axios.post("https://educatsy-3rtz.onrender/api/form/contact", contact)
 
     if (response.status === 200) {
       setContact(authUser ? { ...contact, message: "" } : defaultContactForm);
