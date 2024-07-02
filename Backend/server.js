@@ -38,7 +38,7 @@ const { title } = require("process");
 const { version } = require("os");
 
 const corsOption = {
-  origin: "*",
+  origin: "https://educatsy.vercel.app/",
   method: "GET POST PUT DELETE HEAD PATCH",
   credentials: true,
 };
