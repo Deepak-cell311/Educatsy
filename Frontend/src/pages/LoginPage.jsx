@@ -15,7 +15,7 @@ const LoginPage = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/user/login", {
+      const response = await axios.post("http://educatsy-3rtz.onrender/api/user/login", {
         email: data.email,
         password: data.password,
       });
