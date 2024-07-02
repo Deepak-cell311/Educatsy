@@ -49,7 +49,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://educatsy-3rtz.onrender",
+  "proxy": "https://educatsy-3rtz.onrender.com/",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }

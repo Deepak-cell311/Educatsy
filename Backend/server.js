@@ -21,7 +21,7 @@ const swaggerOptions={
     description:"Swagger intigration with Node.js"
   },
   servers:[{
-    url:`https://educatsy-3rtz.onrender`
+    url:`https://educatsy-3rtz.onrender.com/`
   }]},
   apis:["./routes/*.js"]
 };

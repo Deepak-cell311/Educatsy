@@ -18,7 +18,7 @@ function Courses() {
   useEffect(() => {
     const getCourse = async () => {
       try {
-        const response = await axios.get(`https://educatsy-3rtz.onrender/api/course`)
+        const response = await axios.get(`https://educatsy-3rtz.onrender.com/api/course`)
         setCourses(response.data.map(course => ({...course, rating: 0})))
       } catch (error) {
         console.log(error);

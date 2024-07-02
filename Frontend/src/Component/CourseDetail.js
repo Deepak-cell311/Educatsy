@@ -12,7 +12,7 @@ function CourseDetail() {
     const fetchCourse = async () => {
       try {
         const response = await axios.get(
-          `https://educatsy-3rtz.onrender/api/course/${id}`
+          `https://educatsy-3rtz.onrender.com/api/course/${id}`
         );
         setCourse(response.data)
       } catch (err) {
