@@ -39,7 +39,7 @@ const { version } = require("os");
 
 const corsOption = {
   origin: ['https://educatsy.vercel.app', 'http://localhost:3000'],
-  method: "GET POST PUT DELETE HEAD PATCH",
+  method: ["GET POST PUT DELETE HEAD PATCH"],
   credentials: true,
 };
 app.use(cors(corsOption));
