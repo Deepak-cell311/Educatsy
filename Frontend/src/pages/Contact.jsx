@@ -75,7 +75,7 @@ return (
       <section>
         <article className="form-detail-contact">
           <h1>Need Additonal Information</h1>
-          <p className="form-detail-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+          <p className="form-detail-para">Lorem ipsud dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
           <div className="contact-icons">
             <a className="text-white " href="/Contact"><i className="fa-solid fa-envelope-open"></i>6386314268</a>
             <a className="text-white " href="/Contact"><i className="fa-solid fa-envelope-open"></i>vibemagnet23@gmail.com</a>
