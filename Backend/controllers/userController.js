@@ -9,11 +9,11 @@ const bcrypt = require("bcrypt");
 
 const resetPassword = async (req, res) => {
   try {
-    const { email, newPassword } = req.body;
+    const { email, newPassword } = req.body;         // provided by user
 
     // Find the user by email
     const user = await User.findOne({ email });
-    if (!user) {
+    if (!user) {       // if user is not found
       return res.status(404).json({ message: "User not found" });
     }
 
@@ -22,9 +22,11 @@ const resetPassword = async (req, res) => {
     const hashPassword = await bcrypt.hash(newPassword, salt);
 
     // Update the user's password
-    user.password = hashPassword;
+    user.password = hashPassword;         // this user's password is taken from database
     await user.save();
 
+
+    /* use for checking and error handling for password (optional)  */
     const updatedUser = await User.findOne({ email });
     if (updatedUser.password !== hashPassword) {
       throw new Error("Password update failed");

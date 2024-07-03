@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import Footer from "./Component/Footer";
 import Home from "./Component/Home";
@@ -14,14 +10,13 @@ import Contact from "./pages/Contact";
 import ErrorPage from "./pages/404ErrorPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/authprovider";
 import ForgetPassword from "./Component/ForgetPassword";
 import CourseDetail from "./Component/CourseDetail";
 
 function App() {
-  
-  const [authUser] = useAuth()
+  const [authUser] = useAuth();
   return (
     <>
       <Navbar />
@@ -29,19 +24,19 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/AboutUs" element={<About />} />
-        <Route path="/Courses" element={authUser ? <Courses /> : <Navigate to="/login" />} />
+        <Route path="/Courses" element={authUser ? <Courses /> : <Navigate to="/login" />}/>
         <Route path="course/:id" element={<CourseDetail />} />
         <Route path="/Resources" element={<Resources />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<RegisterPage />} />
         <Route path="/forgetPassword" element={<ForgetPassword />} />
-        <Route path="*" element={<ErrorPage/>} />
-        </Routes>
-        <Toaster />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+      <Toaster />
       <Footer />
-      </>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

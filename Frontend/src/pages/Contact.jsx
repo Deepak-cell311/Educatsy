@@ -77,9 +77,9 @@ return (
           <h1>Need Additonal Information</h1>
           <p className="form-detail-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
           <div className="contact-icons">
-            <a href="/Contact"><i className="fa-solid fa-envelope-open"></i>94503xxgit gixx</a>
-            <a href="/Contact"><i className="fa-solid fa-envelope-open"></i>sample@gmail.com</a>
-            <a href="/contact"><i className="fa-solid fa-envelope-open"></i>China, Beijing</a>
+            <a className="text-white " href="/Contact"><i className="fa-solid fa-envelope-open"></i>6386314268</a>
+            <a className="text-white " href="/Contact"><i className="fa-solid fa-envelope-open"></i>vibemagnet23@gmail.com</a>
+            <a className="text-white " href="/contact"><i className="fa-solid fa-envelope-open"></i>India, Uttar Pradesh</a>
           </div>
         </article>
       </section>
