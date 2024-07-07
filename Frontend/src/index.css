@@ -1038,10 +1038,9 @@ textarea {
   }
 
   .navbar-form .btn {
-    width: 11rem;
-    margin: 2rem;
+    width: 8rem;
+    margin: 3.7rem 5rem;
     display: block;
-    height: 7rem;
   }
 
 
@@ -1052,8 +1051,7 @@ textarea {
 
  .form-detail-para{
   text-align: center;
-        width: 41rem;
-        margin-left: 0rem;
+        width: 39rem;
  }
 
  .contact-icons{
