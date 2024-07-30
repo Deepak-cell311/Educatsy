@@ -130,10 +130,10 @@ ul li a {
 
 .card-poster img {
   height: auto;
-  width: 30rem;
+  width: 27rem;
   margin: 0rem auto;
   border-radius: 2rem;
-  object-fit: cover;
+  object-fit: fill;
   aspect-ratio: 3/2;
 
 }
