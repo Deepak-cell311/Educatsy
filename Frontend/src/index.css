@@ -991,7 +991,8 @@ textarea {
   .card-poster img {
     height: auto;
     margin: auto;
-    object-fit: fill
+    object-fit: fill;
+    width: 30rem;
   }
 
   .card-poster a {
