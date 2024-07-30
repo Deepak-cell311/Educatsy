@@ -1045,10 +1045,16 @@ textarea {
     opacity: 1;
   }
 
-  .navbar-form .btn {
+/*   .navbar-form .btn {
     width: 8rem;
     margin: 3.7rem 5rem;
     display: block;
+  } */
+
+  .btn-danger{
+    height: 5rem;
+    padding: 0 3rem;
+    margin-top: 3rem;
   }
 
 
