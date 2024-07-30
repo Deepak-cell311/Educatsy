@@ -986,14 +986,14 @@ textarea {
   .card {
     /* margin: auto; */
     height: auto;
-    width: 38rem;
+    width: 30rem;
     margin: auto;
     /* padding: 5rem; */
   }
 
   .card-poster img {
     
-    width: 30rem;
+/*     width: 30rem; */
     height: auto;
     right: -15px;
     margin: auto;
