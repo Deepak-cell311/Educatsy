@@ -808,6 +808,7 @@ textarea {
     font-size: 1.6rem;
     margin: 0 4rem;  
     text-align: center;
+    padding-bottom: 4rem;
   }
 
   .banner-image {
