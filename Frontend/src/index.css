@@ -800,12 +800,14 @@ textarea {
     font-weight: 600;
 /*     width: 35rem; */
     line-height: 5rem;
+    text-align: center;
 
   }
 
   .home-para {
     font-size: 1.6rem;
     margin: 0 4rem;  
+    text-align: center;
   }
 
   .banner-image {
