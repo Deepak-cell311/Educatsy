@@ -100,6 +100,8 @@ ul li a {
   place-content: center;
   text-decoration: none;
   color: black;
+  margin: auto;
+  
 }
 
 .card {
@@ -983,15 +985,19 @@ textarea {
 
   .card {
     /* margin: auto; */
-    height: 42rem;
+    height: auto;
     width: 38rem;
+    margin: auto;
     /* padding: 5rem; */
   }
 
   .card-poster img {
-    width: 38rem;
-    height: 29rem;
+    
+    width: 30rem;
+    height: auto;
     right: -15px;
+    margin: auto;
+    object-fit: fill
   }
 
   .card-poster a {
