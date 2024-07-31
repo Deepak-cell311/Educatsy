@@ -87,7 +87,7 @@ ul li a {
   padding: 0 1rem;
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .main-card {
@@ -412,6 +412,27 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+video{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 176%;
+  left: 26%;
+  right: 36%;
+  width: 49%;
+  height: 40%;
+}
+
+.modal-close i{
+    position: absolute;
+    top: 177%;
+    color: white;
+    left: 73%;
+    z-index: 1;
+    font-size: 2rem;
 }
 
 .fa-circle-play {
