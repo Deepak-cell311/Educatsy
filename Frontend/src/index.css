@@ -536,6 +536,7 @@ video{
 
 .marquee-content img {
   object-fit: contain;
+  filter: invert(1);
 }
 
 .marquee-main h1 {
