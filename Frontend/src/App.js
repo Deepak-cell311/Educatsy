@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./Component/Navbar";
+import NavBar from "./Component/Navbar";
 import Footer from "./Component/Footer";
 import Home from "./Component/Home";
 import Courses from "./pages/Courses";
@@ -18,7 +18,7 @@ function App() {
   const [authUser] = useAuth();
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />

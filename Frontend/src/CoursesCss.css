@@ -4,9 +4,12 @@
      text-align: center;
 
 }
-
 .courses h1 {
      font-size: 5rem;
+}
+
+.dark .courses{
+     color: white;
 }
 
 

@@ -4,10 +4,7 @@ import { useAuth } from "../context/authprovider"
 import axios from "axios"
 import toast from 'react-hot-toast';
 
-
-
 const Contact = () => {
-
   const defaultContactForm = {
     username: "",
     email: "",
@@ -15,9 +12,7 @@ const Contact = () => {
   }
 
   const [contact, setContact] = useState(defaultContactForm)
-  // const [userdata, setUserdata] = useState(true)
   const {authUser} = useAuth()
-
 
   useEffect(() => {
     if (authUser) {
@@ -33,7 +28,6 @@ const Contact = () => {
   
     }, [authUser])
   
-
 const handleInput = (e) => {
   const name = e.target.name;
   const value = e.target.value;
@@ -43,19 +37,11 @@ const handleInput = (e) => {
   }))
 }
 
-
-
 const handleSubmit = async (e) => {
   e.preventDefault()
   console.log("this is e: ", e);
   try {
-    // const response = await axios.post("http://localhost:5000/api/form/contact", {
-    //   email: contact.email,
-    //   username: contact.username,
-    //   message: contact.message
-    // })
     const response = await axios.post("https://educatsy-3rtz.onrender.com/api/form/contact", contact)
-
     if (response.status === 200) {
       setContact(authUser ? { ...contact, message: "" } : defaultContactForm);
       toast.success("Form Submitted Successfully")
@@ -83,9 +69,8 @@ return (
           </div>
         </article>
       </section>
-
       <section >
-        <form className="form-input" method="post" action="" onSubmit={handleSubmit}>
+        <form className="form-input" method="post" onSubmit={handleSubmit}>
           <div >
             <label htmlFor="username" >Username*</label>
             <input className="text-black" type="text" value={contact.username} onChange={handleInput} placeholder="E.g. John Doe" name="username" id="username" required autoComplete="true" /><br /><br />
@@ -98,13 +83,9 @@ return (
             <label htmlFor="message">Feedback</label>
             <textarea value={contact.message} onChange={handleInput} className="text-black" name="message" id="message" cols="12" rows="5" placeholder="Write Here...."></textarea><br />
           </div>
-
-
           <Button title="Submit" type="submit" />
         </form>
       </section>
-
-
     </main>
   </>
 )
