@@ -20,11 +20,8 @@ https://educatsy.vercel.app/
 
 ## Screenshots
 
-![Screenshot 2024-07-01 142104](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/1b531fd2-1ed0-483c-83a6-f62c192cf4ab)
-![Screenshot 2024-07-01 142136](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/385f8949-2003-46ae-833a-7b4f31a6b623)
-![Screenshot 2024-07-01 142123](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/9652fa69-9389-4e92-a5f9-36dad6537e52)
-![Screenshot 2024-07-01 142314](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/e47a3f61-9f4b-46dc-9562-3eb7b509baab)
-![Screenshot 2024-07-01 142355](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/fea9a166-b3be-4d75-96b5-0b8a84e57c33)
+![educatsy vercel app_](https://github.com/user-attachments/assets/24a3474e-ced1-4244-9417-5bdecd5d2d2e)
+
 
 ## Features
 
