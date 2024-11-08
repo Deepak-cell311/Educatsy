@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import banner from "../assets/image1.jpg";
 import js from '../assets/js.png'
@@ -19,6 +19,13 @@ const Home = () => {
   const handleToggle = () => {
     setMenuOpen(!menuOpen)
   }
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) {
+      alert("Switch to the desktop site for the best experience. Mobile view is under maintenance.");
+    }
+  }, []);
   // const {authUser} = useAuth();
   return (
     <div className="relative flex flex-col items-center justify-center bg-gray-900 overflow-hidden text-white">
