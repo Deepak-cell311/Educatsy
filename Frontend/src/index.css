@@ -1,6 +1,6 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 
 * {
@@ -102,7 +102,7 @@ ul li a {
   text-decoration: none;
   color: black;
   margin: auto;
-  
+
 }
 
 .card {
@@ -278,7 +278,7 @@ body.dark .bg-dark {
   background-color: #1e1e1e;
 }
 
-.dark .form-detail-contact{
+.dark .form-detail-contact {
   color: white;
 }
 
@@ -451,7 +451,7 @@ body.dark .bg-dark {
   justify-content: center;
 }
 
-video{
+video {
   position: absolute;
   display: flex;
   align-items: center;
@@ -463,13 +463,13 @@ video{
   height: 40%;
 }
 
-.modal-close i{
-    position: absolute;
-    top: 177%;
-    color: white;
-    left: 73%;
-    z-index: 1;
-    font-size: 2rem;
+.modal-close i {
+  position: absolute;
+  top: 177%;
+  color: white;
+  left: 73%;
+  z-index: 1;
+  font-size: 2rem;
 }
 
 .fa-circle-play {
@@ -726,7 +726,7 @@ textarea {
   display: none;
 }
 
-.form-detail-contact-para{
+.form-detail-contact-para {
   font-size: 2rem
 }
 
@@ -849,9 +849,9 @@ textarea {
   .text {
     display: flex;
     flex-direction: column;
-/*     padding: 0 4rem; */
+    /*     padding: 0 4rem; */
     line-height: 1.6rem;
-/*     width: 43rem; */
+    /*     width: 43rem; */
   }
 
   .home-heading {
@@ -859,7 +859,7 @@ textarea {
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-/*     width: 35rem; */
+    /*     width: 35rem; */
     line-height: 5rem;
     text-align: center;
 
@@ -867,7 +867,7 @@ textarea {
 
   .home-para {
     font-size: 1.6rem;
-    margin: 0 4rem;  
+    margin: 0 4rem;
     text-align: center;
     padding-bottom: 4rem;
   }
@@ -1103,7 +1103,7 @@ textarea {
     opacity: 1;
   }
 
-/*   .navbar-form .btn {
+  /*   .navbar-form .btn {
     width: 8rem;
     margin: 3.7rem 5rem;
     display: block;
@@ -1116,35 +1116,36 @@ textarea {
   } */
 
 
- .form-detail-contact h1{
-  text-align: center;
-        margin-left: 7rem;
- }
+  .form-detail-contact h1 {
+    text-align: center;
+    margin-left: 7rem;
+  }
 
- .form-detail-para{
-  text-align: center;
-        width: 39rem;
- }
+  .form-detail-para {
+    text-align: center;
+    width: 39rem;
+  }
 
- .contact-icons{
-  margin-left: 8rem;
-  color: white;
-}
+  .contact-icons {
+    margin-left: 8rem;
+    color: white;
+  }
 
- .form-input{
-  width: 40rem;
- }
- .form-input input{
-  width: 39rem;
- }
+  .form-input {
+    width: 40rem;
+  }
+
+  .form-input input {
+    width: 39rem;
+  }
 
 
-.form-detail-contact-para{
-font-size: 2rem;
-        margin: 2rem;
-        text-align: center;
-        width: 38rem;
-}
+  .form-detail-contact-para {
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+    width: 38rem;
+  }
 
 
 
@@ -1197,4 +1198,69 @@ font-size: 2rem;
     row-gap: 3rem;
     justify-content: space-evenly;
   } */
+}
+
+.navText{
+  font-size: 2rem;
+}
+
+
+/* Centering the content of whole body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+/* Adding transform-style CSS 
+  property to the boxes */
+.box {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+  margin-top: 10rem;
+  margin-left: 34rem;
+  margin-bottom: 20rem;
+}
+
+/* Adding keyframes for animation */
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+/* Adding CSS to all the span 
+  tags for animation */
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform:
+    rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect:
+    below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+/* Adding object-fit CSS property to all the images */
+.box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10%;
 }

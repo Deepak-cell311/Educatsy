@@ -20,8 +20,8 @@ function NavBar() {
      }, [isDarkMode]);
      return (
           <>
-               <Navbar expand="lg" className="text-white fs-1 fixed-top transparent" bg="dark" >
-                    <Container className="text-white">
+               {/* <Navbar expand="lg" className="text-white fs-1 fixed-top transparent" bg="dark" > */}
+                    {/* <Container className="text-white">
                          <Navbar.Toggle aria-controls="basic-navbar-nav shadow-none text-white" />
                          <Navbar.Brand href="/Home" className="text-white fs-1" animation="glow">Educatsy</Navbar.Brand>
                          <Navbar.Collapse id="basic-navbar-nav justify-content-between">
@@ -44,8 +44,11 @@ function NavBar() {
                               </form>
 
                          </div>
-                    </Container>
-               </Navbar>
+                    </Container> */}
+               {/* </Navbar> */}
+               {/* <div className="mt-10 z-1000">
+                    <button className="text-white cursor-pointer">Toggel</button>
+               </div> */}
           </>
      )
 }
