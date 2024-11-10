@@ -29,7 +29,7 @@ const RegisterPage = () => {
       }
       localStorage.setItem("Users", JSON.stringify(response.data.user));
     } catch (err) {
-      if(err.response){
+      if (err.response) {
         toast.error(err.response.data.message);
       }
     }
@@ -43,23 +43,23 @@ const RegisterPage = () => {
 
   return (
     <div className="w-screen md:max-w-screen-sm h-screen bg-gray-900 flex items-center justify-center overflow-hidden">
-    <i onClick={() => navigate("/home")} className="fa-solid fa-arrow-left absolute top-4 left-20 text-5xl mr-10"></i>
+      <i onClick={() => navigate("/home")} className="fa-solid fa-arrow-left absolute top-4 left-20 text-5xl mr-10"></i>
       <div className="w-3/4 max-w-4xl p-20 bg-gray-800 rounded-lg shadow-xl border border-gray-700">
         <h2 className="md:text-8xl text-6xl font-extrabold text-center text-white mb-8 animate__animated animate__fadeIn ">
-          Join Us 
+          Join Us
         </h2>
 
-        <form onSubmit={handleSubmit(onSubmit, onError)}  className="space-y-6">
+        <form onSubmit={handleSubmit(onSubmit, onError)} className="space-y-6">
 
           <div className="relative">
             <input
               type="username"
               className="w-full p-3 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300 ease-in-out"
-              placeholder="Enter your email"
+              placeholder="Enter your username"
 
-              {...register('username', {required: "Username is required"})}
+              {...register('username', { required: "Username is required" })}
             />
-          
+
             <div className="absolute top-0 right-0 text-gray-400 mt-3 mr-3 text-sm">
               <span className="animate__animated animate__fadeInUp text-5xl"><img src="https://img.icons8.com/?size=30&id=98957&format=png&color=FAB005" alt="" /></span>
             </div>
@@ -70,7 +70,7 @@ const RegisterPage = () => {
               className="w-full p-3 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300 ease-in-out"
               placeholder="Enter your email"
 
-              {...register('email', {required: "Email is required", pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" }})}
+              {...register('email', { required: "Email is required", pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" } })}
             />
             <div className="absolute top-0 right-0 text-gray-400 mt-3 mr-3 text-sm">
               <span className="animate__animated animate__fadeInUp text-5xl">📧</span>
@@ -93,12 +93,12 @@ const RegisterPage = () => {
               <span className="animate__animated animate__fadeInUp text-5xl">🔒</span>
             </div>
           </div>
-        
+
           <button
             type="submit"
             className="w-full py-3 bg-green-500 text-white rounded-md text-4xl font-semibold hover:bg-green-400 transition-all duration-300 ease-in-out mt-6 transform hover:scale-105"
           >
-           Sign up
+            Sign up
           </button>
 
           <div className="text-center mt-4">
