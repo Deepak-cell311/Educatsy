@@ -11,6 +11,7 @@ import css from '../assets/Css.png'
 import express from '../assets/express.png'
 import Faq from "../Component/Faq"
 import { useAuth } from "../context/authprovider"
+import Footer from "./Footer";
 
 const Home = () => {
   const images = [js, node, github, html, css, react, mongodb, express];
@@ -20,19 +21,19 @@ const Home = () => {
     setMenuOpen(!menuOpen)
   }
 
-  useEffect(() => {
-    const isMobile = window.innerWidth < 768;
-    if (isMobile) {
-      alert("Switch to the desktop site for the best experience. Mobile view is under maintenance.");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const isMobile = window.innerWidth < 768;
+  //   if (isMobile) {
+  //     alert("Switch to the desktop site for the best experience. Mobile view is under maintenance.");
+  //   }
+  // }, []);
   // const {authUser} = useAuth();
   return (
-    <div className="relative flex flex-col items-center justify-center bg-gray-900 overflow-hidden text-white">
+    <div className=" w-screen relative flex flex-col items-center justify-center bg-gray-900 overflow-hidden text-white">
       <div className="relative w-full h-screen" >
-        <nav className="absolute z-50 mt-5 text-gray-400 text-5xl ml-10 cursor-pointer">
-          <i className="fa-solid fa-bars" onClick={handleToggle}></i>
-          <ul className={`flex flex-col ml-20 ${menuOpen ? "hidden" : "block"}`} >
+        <nav className="absolute z-50 mt-5 text-gray-400 text-5xl md:ml-10 cursor-pointer">
+          <i className="fa-solid fa-bars mx-5" onClick={handleToggle}></i>
+          <ul className={`flex flex-col md:ml-20 ml-40  ${menuOpen ? "hidden" : "block"}`} >
             {navItems.map((item) => (
               <li key={item} className="mt-10">
                 <Link to={`/${item}`} className="navText -ml-28  text-4lg font-bold hover:text-green-500 text-gray-300" >{item.charAt(0).toUpperCase() + item.slice(1)}</Link>
@@ -43,15 +44,16 @@ const Home = () => {
 
         <div className="relative overflow-hidden">
           <img
-            className="w-screen h-screen object-cover opacity-40 animate-fadeInImage "
+            className="md:w-screen w-full  h-screen object-cover opacity-40 animate-fadeInImage "
             src={banner}
             alt="banner"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-70"></div>
         </div>
 
         <div className="text-center transform -translate-y-1/2 text-black">
-          <h1 style={{ fontSize: "9rem" }} className=" animate-fadeIn text-4xl -mt-96 md:text-5xl lg:text-6xl font-bold mb-4 text-orange-200 animate-slideInText mx-auto">
+          <h1 className="animate-fadeIn md:-mt-96 relative -mt-96 -top-96 md:top-0 text-6xl leading-tight md:text-9xl font-bold mb-4 text-orange-200 animate-slideInText mx-auto">
             Start your
             <span className="text-green-400 font-semibold"> programming</span>
             <br />
@@ -61,9 +63,8 @@ const Home = () => {
           </h1>
           {/* <h1 className="text-5xl text-white" > Start Your Programming Journey With Our Dedicated Community !</h1> */}
 
-          <p className="text-lg md:text-xl text-white mx-auto lg:text-2xl mt-2 animate-pulse text">
-            Begin your coding adventure in our community, where learning is always
-            appreciated and valued
+          <p className="-top-96 md:top-0 text-lg md:text-xl text-white mx-auto lg:text-2xl md:mt-2 text-center md:px-0 px-20 -mt-96 animate-pulse text">
+            Begin your coding adventure in our community, where learning is always appreciated and valued
           </p>
 
           <Link
@@ -158,10 +159,9 @@ const Home = () => {
         </div>
       </div>
 
-
       <div>
         <div>
-          <h1 className="main-faq text-center text-5xl m-40 font-bold">Showcase Your Mastered <span className="marquee-name">Skills</span></h1>
+          <h1 className="main-faq text-center md:text-5xl text-normal md:m-40 my-16 font-bold">Showcase Your Mastered <span className="marquee-name">Skills</span></h1>
           <div className="box">
             {images.map((image, i) => (
               <span key={i} style={{ "--i": i + 1 }}>
@@ -172,18 +172,8 @@ const Home = () => {
         </div>
       </div>
 
-
-
-
       <Faq />
-
-
-
-
-
-
-
-
+      <Footer />
     </div>
 
 

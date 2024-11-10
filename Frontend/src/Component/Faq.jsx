@@ -23,9 +23,9 @@ function Faq() {
 
     <>
       <>
-        <section className="faq-launch">
+        <section className=" mt-96">
           <div className="faq-heading">
-            <h1 className="main-faq">Common <span className="marquee-name">FAQ</span></h1>
+            <h1 className="main-faq ">Common <span className="marquee-name">FAQ</span></h1>
           </div>
           <div className="faq animate-fadeIn cursor-pointer">
             <div className="d-flex justify-content-between">
