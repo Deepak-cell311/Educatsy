@@ -36,7 +36,7 @@ const Home = () => {
           <ul className={`flex flex-col md:ml-20 ml-40  ${menuOpen ? "hidden" : "block"}`} >
             {navItems.map((item) => (
               <li key={item} className="mt-10">
-                <Link to={`/${item}`} className="navText -ml-28  text-4lg font-bold hover:text-green-500 text-gray-300" >{item.charAt(0).toUpperCase() + item.slice(1)}</Link>
+                <Link to={`/${item}`} className="navText md:-ml-20 -ml-28   text-4lg font-bold hover:text-green-500 text-gray-300" >{item.charAt(0).toUpperCase() + item.slice(1)}</Link>
               </li>
             ))}
           </ul>
