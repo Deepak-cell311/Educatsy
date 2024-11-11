@@ -7,8 +7,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 function NavBar() {
 
-     const [authUser] = useAuth()
-     console.log(authUser);
+     const {authUser} = useAuth()
 
      const [isDarkMode, setIsDarkMode] = useState(true);
 

@@ -9,6 +9,7 @@ const LoginPage = () => {
   const { handleSubmit, register } = useForm();
   const onSubmit = async (data) => {
     try {
+      // const response = await axios.post("https://educatsy-3rtz.onrender.com/api/user/login", {
       const response = await axios.post("https://educatsy-3rtz.onrender.com/api/user/login", {
         email: data.email,
         password: data.password,

@@ -10,20 +10,22 @@ import ErrorPage from "./pages/404ErrorPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import { Toaster } from "react-hot-toast";
-import { useAuth } from "./context/authprovider";
+import { useAuth } from "./context/authprovider.js";
 import ForgetPassword from "./Component/ForgetPassword";
 import CourseDetail from "./Component/CourseDetail";
+import Authentication from "./Component/authentication.jsx";
 
 function App() {
-  const [authUser] = useAuth();
+  const { authUser } = useAuth();
+  console.log("App component - authUser:", authUser); 
   return (
     <>
-      <NavBar />
+      <Authentication />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Courses" element={authUser ? <Courses /> : <Navigate to="/login" />}/>
+        <Route path="/Courses" element={authUser ? <Courses /> : <Navigate to="/login" />} />
         <Route path="course/:id" element={<CourseDetail />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/login" element={<LoginPage />} />
