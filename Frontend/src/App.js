@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./Component/Navbar";
 import Footer from "./Component/Footer";
-import Home from "./Component/Home";
+import Home from "./pages/Home.jsx";
 import Courses from "./pages/Courses";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -31,7 +31,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<RegisterPage />} />
         <Route path="/forgetPassword" element={<ForgetPassword />} />
-        <Route path="*" element={<ErrorPage />} />
+        {/* <Route path="*" element={<ErrorPage />} /> */}
       </Routes>
       <Toaster />
     </>
