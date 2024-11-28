@@ -37,12 +37,12 @@ const Book = () => {
                             />
                         ) : (
                             booksToBeDisplayed.map((book, index) => (
-                                <div key={index} className="w-[36rem] bg-gray-300 shadow-inner shadow-gray-900 text-black py-10 px-20 hover:scale-105 animate-fadeIn">
-                                    <img className="w-full h-80 object-fit mix-blend-multiply" src={book.image} alt={book.title} />
+                                <div key={index} className="w-[36rem] rounded-xl shadow-slate-50 bg-gray-800 shadow-inner  text-white py-10 px-20 hover:scale-105 animate-fadeIn">
+                                    <img className="w-full h-80 object-fit" src={book.image} alt={book.title} />
                                     <div>
                                         <h1 className="text-5xl text-center m-3 font-extrabold">{book.name}</h1>
-                                        <h2 className="text-3xl text-center text-gray-700">{book.title}</h2>
-                                        <button className="text-3xl text-center bg-blue-400 p-3 mx-auto rounded-lg w-full mt-10">
+                                        <h2 className="text-3xl text-center text-white">{book.title}</h2>
+                                        <button className=" text-3xl text-center bg-blue-400 p-3 mx-auto rounded-lg w-full mt-10">
                                             <a href={book.link} rel="noreferrer" target='_blank' className="hover:text-black">Click To get book</a>
                                         </button>
                                     </div>

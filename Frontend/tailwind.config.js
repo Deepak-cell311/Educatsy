@@ -18,6 +18,9 @@ module.exports = {
         primary: "#ffb400",
         secondary: "#4a4a4a",
       },
+      fontFamily: {
+        ubuntu: ['Ubuntu', 'sans-serif'],
+      },
       animation: {
         fadeIn: "fadeIn 1s ease-in-out forwards",
       },

@@ -66,6 +66,15 @@ const Home = () => {
     <div className="w-screen relative flex flex-col items-center justify-center bg-gray-900 overflow-hidden text-white">
       <Authentication />
       <div className="relative w-full h-screen">
+        {/* <input type="search" className="absolute z-50 right-72 top-[3.2rem] bg-gray-400 rounded-xl px-1 py-6 outline-none text-4xl" placeholder="search"/> */}
+        {/* <div className="absolute z-50">
+          <ul className="flex flex-row m-2 p-2">
+            <li className="mx-8 float-end">Home</li>
+            <li className="mx-8 float-end">About</li>
+            <li className="mx-8 float-end">Courses</li>
+            <li className="mx-8 float-end">Contact</li>
+          </ul>
+        </div> */}
         <nav className="absolute z-50 mt-5 text-gray-400 text-5xl md:ml-10 cursor-pointer">
           <i className="fa-solid fa-bars mx-5" onClick={handleToggle}></i>
           <ul className={`flex flex-col md:ml-20 ml-40 ${menuOpen ? "block" : "hidden"}`}>
@@ -129,12 +138,12 @@ const Home = () => {
               />
             ) : (
               courseToBeDisplayed.map((course, index) => (
-                <div key={index} className="w-[36rem] bg-gray-300 shadow-inner shadow-gray-900 text-black py-10 px-20 hover:scale-105 animate-fadeIn">
-                  <img className="w-full h-80 object-fit mix-blend-multiply" src={course.image} alt={course.title} />
+                <div key={index} className="w-[36rem] bg-gray-800 text-white shadow-inner shadow-gray-900 py-10 px-20 hover:scale-105 animate-fadeIn">
+                  <img className="w-full h-80 object-fit " src={course.image} alt={course.title} />
                   <div>
                     <h1 className="text-5xl text-center m-3 font-extrabold">{course.name}</h1>
-                    <h2 className="text-3xl text-center text-gray-700">{course.title}</h2>
-                    <button className="text-3xl text-center bg-blue-400 p-3 mx-auto rounded-lg w-full mt-10">
+                    <h2 className="text-3xl text-center ">{course.title}</h2>
+                    <button className="text-3xl text-center bg-blue-400 p-3 mx-auto rounded-lg w-full mt-10 relative">
                       <Link to="/Courses" className="hover:text-black">Click To get Course</Link>
                     </button>
                   </div>
