@@ -177,7 +177,7 @@ const About = () => {
 
       {/* Vision Section */}
       <div className="flex flex-col lg:flex-row mx-8 mt-10 lg:mt-48">
-        <div className="lg:w-1/2 mb-10 lg:mb-0">
+        <div className="lg:w-[60rem] mb-10 lg:mb-0">
           <div className="flex flex-col justify-between">
             <span className="bg-cyan-600 h-1 w-40 md:w-[22rem] rounded-lg mb-2"></span>
             <h2 className="text-7xl md:text-8xl">
@@ -188,9 +188,9 @@ const About = () => {
         <div className="lg:w-1/2 text-xl md:text-4xl leading-relaxed">
           <p className='text-2xl md:text-3xl'>
             <span className="marquee-name font-extrabold">
-              Greatness isn&apos;t achieved overnight
+              Greatness isn&apos;t achieved overnight 
             </span>
-            . It&apos;s a unique journey for everyone, with a lot of learnings and experiences along the way. That&apos;s why, at
+             . It&apos;s a unique journey for everyone, with a lot of learnings and experiences along the way. That&apos;s why, at
             <span className="marquee-name font-extrabold"> Educatsy</span>, we don&apos;t offer a one-size-fits-all training
             solution. We&apos;re on a mission to{' '}
             <span className="marquee-name font-extrabold">empower organizations and their people on the path to greatness</span>{' '}
@@ -263,8 +263,8 @@ const About = () => {
         </div>
         <div className="border-2 rounded-xl flex flex-wrap justify-around items-center px-4 lg:px-20 py-10 lg:h-96">
           <div className="flex flex-col text-center mb-8 lg:mb-0">
-            <span className="font-extrabold text-6xl lg:text-8xl">2012</span>
-            <span className="text-sm lg:text-4xl">TalentLMS release</span>
+            <span className="font-extrabold text-6xl lg:text-8xl">2024</span>
+            <span className="text-sm lg:text-4xl">Educatsy release</span>
           </div>
           <div className="flex flex-col text-center mb-8 lg:mb-0">
             <span className="font-extrabold text-6xl lg:text-8xl">180+</span>
@@ -276,7 +276,7 @@ const About = () => {
           </div>
           <div className="flex flex-col text-center mb-8 lg:mb-0">
             <span className="font-extrabold text-6xl lg:text-8xl">11M+</span>
-            <span className="text-sm lg:text-4xl">people learning with TalentLMS</span>
+            <span className="text-sm lg:text-4xl">people learning with Educatsy</span>
           </div>
           <div className="w-full flex justify-center lg:justify-end">
             <img className="w-full max-w-2xl lg:max-w-lg" src={image1} alt="" />
