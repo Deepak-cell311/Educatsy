@@ -42,8 +42,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-screen md:max-w-screen-sm h-screen bg-gray-900 flex items-center justify-center overflow-hidden">
-      <i onClick={() => navigate("/home")} className="fa-solid fa-arrow-left absolute top-4 left-20 text-5xl mr-10"></i>
+    <div className="w-screen md:max-w-screen-full h-screen bg-gray-900 flex items-center justify-center overflow-hidden">
+      <i onClick={() => navigate("/home")} className="fa-solid fa-arrow-left absolute top-4 left-20 text-5xl mr-10 text-white cursor-pointer"></i>
       <div className="w-3/4 max-w-4xl p-20 bg-gray-800 rounded-lg shadow-xl border border-gray-700">
         <h2 className="md:text-8xl text-6xl font-extrabold text-center text-white mb-8 animate__animated animate__fadeIn">
           Contact Us

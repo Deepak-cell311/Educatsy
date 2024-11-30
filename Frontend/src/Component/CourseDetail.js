@@ -27,17 +27,17 @@ function CourseDetail() {
   if (!course) return <div style={{ margin: "20rem" }}>Loading...</div>;
 
   return (
-    <div className="video">
-      {/* <h1>{course.title}</h1> */}
+    <div className="bg-gray-900 h-screen">
+      <h1 className="text-white text-3xl lg:text-6xl  mx-32 pt-10">{course.title}</h1>
       {course.videoId ? (
         <CourseVideo videoId={course.videoId} />
       ) : (
         <p style={{ fontSize: "3rem" }}>Invalid video URL</p>
       )}
-      <div>
-        {/* <p style={{fontSize: "3rem"}}>Price: ${course.price}</p> */}
-        {/* <p style={{ fontSize: "3rem" }}>Category: {course.category}</p> */}
-      </div>
+      {/* <div className="flex">
+        <p className="text-white lg:text-6xl mx-32 pt-10">Price: ${course.price}</p>
+        <p className="text-white lg:text-6xl mx-32 pt-10">Category: {course.category}</p>
+      </div> */}
     </div>
   );
 }

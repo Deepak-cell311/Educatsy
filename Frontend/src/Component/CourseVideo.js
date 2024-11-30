@@ -12,10 +12,10 @@ function CourseVideo({ videoId }) {
 
   return (
     <>
-      <div>
-        <div>
+      <div className="bg-gray-900 w-screen mx-10 mt-10 ">
+        <div className="mx-5 max-w-1/2">
+          <YouTube videoId={videoId} opts={opts} />
         </div>
-        <YouTube videoId={videoId} opts={opts} />
       </div>
     </>
   );

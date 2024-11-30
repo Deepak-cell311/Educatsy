@@ -149,14 +149,16 @@ import React from 'react';
 import banner from '../assets/banner1.png';
 import gif1 from '../assets/Prize-simplicity.gif';
 import gif2 from '../assets/Help-Others.gif';
-import gif3 from '../assets/Enjoy-Simple-Course-Creation.gif';
 import image1 from '../assets/image1.png';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate()
   return (
     <div className="text-white bg-gray-900 font-sans">
       {/* Hero Section */}
       <div className="flex flex-col-reverse lg:flex-row justify-between items-center mx-8 py-10">
+      <i onClick={() => navigate("/home")} className="fa-solid fa-arrow-left absolute top-4 left-20 text-5xl mr-10 text-white cursor-pointer"></i>
         <div className="lg:w-1/2 w-full text-center lg:text-left mb-10 lg:mb-0">
           <h1 className="text-4xl md:text-7xl text-gray-100 hover:text-gray-300 leading-snug font-ubuntu">
             Hi, we&apos;re

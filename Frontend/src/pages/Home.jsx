@@ -160,10 +160,10 @@ const Home = () => {
 
       <div>
         <h1 className="main-faq text-center md:text-5xl text-normal md:m-40 my-16 font-bold">Showcase Your Mastered <span className="marquee-name">Skills</span></h1>
-        <div className="box">
+        <div className="box ">
           {images.map((image, i) => (
             <span key={i} style={{ "--i": i + 1 }}>
-              <img className="object-fit mix-blend-multiply" src={image} alt="skill logo" />
+              <img className="object-contain mix-blend-multiply" src={image} alt="skill logo" />
             </span>
           ))}
         </div>

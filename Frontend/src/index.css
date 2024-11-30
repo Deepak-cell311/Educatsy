@@ -441,7 +441,7 @@ body.dark .bg-dark {
 
 }
 
-.home-video {
+/* .home-video {
   margin: auto auto;
   position: absolute;
   top: 50%;
@@ -454,9 +454,9 @@ body.dark .bg-dark {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-video {
+/* video {
   position: absolute;
   display: flex;
   align-items: center;
@@ -466,7 +466,7 @@ video {
   right: 36%;
   width: 49%;
   height: 40%;
-}
+} */
 
 .modal-close i {
   position: absolute;
@@ -722,9 +722,9 @@ textarea {
 }
 
 
-.video {
+/* .video {
   margin: 10rem 10rem;
-}
+} */
 
 
 .mobile-navbar {
@@ -967,7 +967,7 @@ textarea {
   }
 
 
-  .home-video {
+  /* .home-video {
     display: flex;
     flex-direction: column;
     margin: auto auto;
@@ -982,7 +982,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .home-card {
     display: none;
@@ -1216,7 +1216,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #000;
+  /* background: #000; */
 }
 
 /* Adding transform-style CSS 
@@ -1261,11 +1261,12 @@ body {
 
 /* Adding object-fit CSS property to all the images */
 .box span img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  height: 250px;
-  width: 300px;
+  right: 30;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-radius: 10%;
 }
